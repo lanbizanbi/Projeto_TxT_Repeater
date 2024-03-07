@@ -75,7 +75,7 @@ header ul li{
     overflow-y: auto;
     background-color: white;
 }
-#repeat-times, #clear, #copyall{
+#repeat-times, #clear, #copyall, #sendButton{
     width: 80px;
     height: 20px;
     border: 1px solid black;
@@ -88,7 +88,21 @@ header ul li{
 #repeat-times{
     width: 50px;
 }
-#sendButton {
-    width: 100px;
-    border: 1px solid black;
+.send-in-whatsapp{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 10px;
+}
+#whatsapp{
+    display: inline-block;
+    padding-right: 5px;
+}
+#sendButton{
+margin-left: 0px;
+}
+#phone { 
+    border-radius: 5px;
 }

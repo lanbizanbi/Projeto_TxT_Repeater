@@ -16,21 +16,26 @@
         </ul>
     </header>
     <div class="container">
-                <div class="contain">
-                    <div class="bolasiniciais">
-                        <label for="repeat-times">Vezes Repetidas
-                            <input type="number" id="repeat-times" min="1" oninput="repeatText()">
-                        </label>
-                        <button id="clear" onclick="resetText()">Limpar</button>
-                        <button id="copyall" onclick="copyallText()">Copiar</button>
-                    </div>
-                    <textarea type="text" placeholder="Insira o texto que deseja repetir" id="text-to-be-repeated" oninput="repeatText()" spellcheck="false"></textarea>
-                    <div class="text-repeated">
-                      <output id="text-repeated-output"></output>
-                    </div>
-                    <input type="text" id="phone">
-                    <button id="sendButton" onclick="sendMessage()">Enviar</button>
-                </div>
+        <div class="contain">
+            <div class="bolasiniciais">
+                <label for="repeat-times">Vezes Repetidas
+                    <input type="number" id="repeat-times" min="1" oninput="repeatText()">
+                </label>
+                <button id="clear" onclick="resetText()">Limpar</button>
+                <button id="copyall" onclick="copyallText()">Copiar</button>
+            </div>
+            <textarea type="text" placeholder="Insira o texto que deseja repetir" id="text-to-be-repeated" oninput="repeatText()" spellcheck="false"></textarea>
+            <div class="text-repeated">
+                <output id="text-repeated-output"></output>
+            </div>
+            <div class="send-in-whatsapp">
+                <img id="whatsapp" src="Imagens/whatsapp.png" alt="logo_Whatsapp">
+                <label for="phone">Numero com prefixo e ddd
+                    <input type="text" id="phone" placeholder="Ex:559299999999" minlength="12" maxlength="12">
+                </label>
+                <button id="sendButton" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
