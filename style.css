@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(209, 255, 240);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(251, 251, 251);
+}
+header h1{
+    font-size: 1.5em;
+    text-indent: 1em;
+}
+header ul{
+    padding-right: 10px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+header ul li{
+    padding-top: 5px;
+}
+.container{
+    margin-left: 10px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contain{
+    width: 80%;
+    position: relative;
+}
+.bolasiniciais{
+    background-color: rgb(54, 255, 188);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: 0;
+}
+#text-to-be-repeated{
+    padding: 48px 10px;
+}
+#text-to-be-repeated,.text-repeated{
+    width: 80%;
+    height: 200px;
+    min-width: 200px;
+    max-width: 600px;
+    border: 1px solid black;
+    border-radius: 7px;
+    word-wrap: break-word; /* ou overflow-wrap: break-word; */
+    
+}
+.text-repeated{
+    overflow-y: auto;
+    background-color: white;
+}
+#repeat-times, #clear, #copyall{
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 2px;
+    cursor: pointer;
+    background-color: white;
+}
+#repeat-times{
+    width: 50px;
+}
+#sendButton {
+    width: 100px;
+    border: 1px solid black;
+}

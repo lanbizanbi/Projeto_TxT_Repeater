@@ -1,0 +1,14 @@
+@media (min-width: 769px) {
+    
+    a{
+        padding-right: 20px;
+    }
+    #text-to-be-repeated{
+        padding-top: 48px;
+
+}}
+@media (min-width: 310px) and (max-width: 578px){
+    #text-to-be-repeated{
+        padding-top: 68px;
+}
+}

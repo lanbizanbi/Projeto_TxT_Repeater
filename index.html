@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TxT Repeater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery/mediapc.css">
+</head>
+<body>
+    <header>
+        <h1>TxT Repeater</h1>
+        <ul>
+            <li><a href="https://github.com/lanbizanbi">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/lucas-soares-512599206/">Linkedin</a></li>
+        </ul>
+    </header>
+    <div class="container">
+                <div class="contain">
+                    <div class="bolasiniciais">
+                        <label for="repeat-times">Vezes Repetidas
+                            <input type="number" id="repeat-times" min="1" oninput="repeatText()">
+                        </label>
+                        <button id="clear" onclick="resetText()">Limpar</button>
+                        <button id="copyall" onclick="copyallText()">Copiar</button>
+                    </div>
+                    <textarea type="text" placeholder="Insira o texto que deseja repetir" id="text-to-be-repeated" oninput="repeatText()" spellcheck="false"></textarea>
+                    <div class="text-repeated">
+                      <output id="text-repeated-output"></output>
+                    </div>
+                    <input type="text" id="phone">
+                    <button id="sendButton" onclick="sendMessage()">Enviar</button>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
